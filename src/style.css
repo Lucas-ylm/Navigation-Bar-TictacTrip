@@ -28,18 +28,13 @@ body {
     background-color: gray;
 }
 
-.oneWay {
-    font-family: "GT Walsheim Pro Regular",Arial,sans-serif;
-}
-
 .mainContainer {
     position: relative;
     background-color: red;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(19,41,104,.1);
-    min-width: 280px;
-    width: 100%;
+    max-width: 100%;
     height: 174px;
     border-radius: 8px;
     margin-bottom: 24px;
@@ -47,24 +42,100 @@ body {
 }
 
 .ctaContainer {
-    padding-top: 8px;
-    margin: 8px 0;
-}
-
-button {
     display: flex;
-    justify-content: center;
     text-shadow: none;
     text-align: center;
     border: none;
+    padding-top: 8px;
+    margin: 8px 0;
     background: transparent;
     font-size: 14px;
 }
 
+div {
+    margin: 8px 0;
+}
+
+.inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fromInput, .toInput {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    max-width: 40%;
+    min-width: 20%;
+    top: 50%;
+    margin-left: 8px;
+    padding: 0 8px;
+    border: 1px solid #f1f2f6;
+    border-radius: 8px;
+    text-align: left;
+    letter-spacing: .3px;
+    background-color: #f1f2f6;
+    box-shadow: none;
+    caret-color: #a1a9c3;
+    color: #132968;
+}
+
+.calenderDepart, .calenderReturn {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    top: 50%;
+    padding: 0 8px;
+    border: 1px solid #f1f2f6;
+    text-align: left;
+    letter-spacing: .3px;
+    background-color: #f1f2f6;
+    box-shadow: none;
+    caret-color: #a1a9c3;
+    color: #132968;
+    min-width: 10%;
+    max-width: 15%;
+}
+
+.calenderDepart {
+    margin-left: 8px;
+    border-radius: 8px 0 0 8px;
+}
+
+.calenderReturn {
+    border-radius: 0 8px 8px 0;
+
+}
+
+
+input {
+    font-size: 16px;
+    font-weight: 500;
+    width: 90%;
+    padding-left: 5px;
+}
+
+button, input {
+    background: transparent;
+    font-family: "GT Walsheim Pro Regular", Arial, sans-serif;
+    border: none;
+    outline: none;
+}
+
 svg {
+    position: relative;
+    top: 8px;
+    left: 2px;
     width: 18px;
     height: 18px;
-    align-self: center;
+}
+
+.ctaSVG {
+    top: 5px;
 }
 
 @media (min-width: 769px) {
